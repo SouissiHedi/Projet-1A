@@ -1,5 +1,5 @@
-#ifndef Header_H
-#define Header_H
+#ifndef Perso_H
+#define Perso_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -21,7 +21,7 @@ typedef struct {
 
 void initPerso(Personne *p);
 void afficherPerso(Personne p, SDL_Surface * screen);
-void deplacerPerso (Personne *p, , int dt);
+void deplacerPerso (Personne *p, int dt, int dir);
 void animerPerso (Personne* p);
 void saut (Personne* p);
 
